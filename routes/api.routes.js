@@ -1,28 +1,45 @@
 module.exports = app => {
-    const tutorials = require("../controllers/tutorial.controller.js");
+    const roti = require("../controllers/roti.controller.js");
+    const votes = require("../controllers/votes.controller.js");
 
     var router = require("express").Router();
 
-    // Create a new Tutorial
-    router.post("/", tutorials.create);
+    console.log("GET ROUTE FILE JSX");
+    ///////////////////////////////////////
+    // ROUTES ROTI
+    ///////////////////////////////////////
+    // Create a new Roti
+    router.post("/roti", roti.create);
 
-    // Retrieve all Tutorials
-    router.get("/", tutorials.findAll);
+    // Retrieve all Roti
+    router.get("/rotis", roti.findAll);
 
-    // Retrieve all published Tutorials
-    router.get("/published", tutorials.findAllPublished);
+    // Retrieve all published Roti
+    router.get("/published", roti.findAllPublished);
 
-    // Retrieve a single Tutorial with id
-    router.get("/:id", tutorials.findOne);
+    // Retrieve a single Roti with id
+    router.get("/roti/:id", roti.findOne);
 
-    // Update a Tutorial with id
-    router.put("/:id", tutorials.update);
+    // Update a Roti with id
+    router.put("/roti/:id", roti.update);
 
-    // Delete a Tutorial with id
-    router.delete("/:id", tutorials.delete);
+    // Delete a Roti with id
+    router.delete("/:id", roti.delete);
 
-    // Create a new Tutorial
-    router.delete("/", tutorials.deleteAll);
+    // Delete All Roti
+    router.delete("/", roti.deleteAll);
 
-    app.use('/api/tutorials', router);
+    ///////////////////////////////////////
+    // ROUTE VOTES
+    ///////////////////////////////////////
+    // Create a new vote
+    router.post("/vote", votes.create);
+
+    // List all votes
+    router.get("/votes", votes.findAll);
+
+
+    ///////////////////////////////////////
+
+    app.use('/api', router);
 };

@@ -1,5 +1,10 @@
 module.exports = (sequelize, Sequelize) => {
-    const Tutorial = sequelize.define("tutorial", {
+    const Roti = sequelize.define("roti", {
+        id: {
+            primaryKey: true,
+            type: Sequelize.UUID,
+            defaultValue: Sequelize.UUIDV4
+        },
         title: {
             type: Sequelize.STRING
         },
@@ -9,7 +14,8 @@ module.exports = (sequelize, Sequelize) => {
         published: {
             type: Sequelize.BOOLEAN
         }
-    });
+    }
+    );
 
-    return Tutorial;
+    return Roti;
 };
