@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    build: .
+    ports:
+      - "3333:3333"
+networks:
+  default:
+    external:
+      name: mysql_project_default

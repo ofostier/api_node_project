@@ -37,7 +37,9 @@ module.exports = app => {
 
     // List all votes
     router.get("/votes", votes.findAll);
-
+    // Count all votes for a ROTI ID
+    router.get("/votes/stat/:id", votes.countVotes);
+    router.get("/rotiti/:roti", roti.findOne);
 
     ///////////////////////////////////////
 

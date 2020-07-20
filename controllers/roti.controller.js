@@ -34,13 +34,38 @@ exports.create = (req, res) => {
 };
 
 // Retrieve all Roti from the database.
-exports.findAll = (req, res) => {
+exports.findAllSav = (req, res) => {
     const title = req.query.title;
     var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
     console.log("Route FindAll.");
 
     Roti.findAll({ where: condition })
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while retrieving tutorials."
+            });
+        });
+};
+
+// Retrieve all Roti from the database.
+exports.findAll = (req, res) => {
+    const title = req.query.title;
+    var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
+
+    console.log("Route FindAll.");
+    /*
+    SELECT r.*, sum(rating) rating, avg(rating) FROM `votes` v, rotis r
+WHERE r.id=v.roti
+GROUP BY r.id
+     */
+
+    db.sequelize.query("SELECT r.*, sum(rating) rating, avg(rating) average, count(user) nb_users "+
+        "FROM `votes` v, rotis r WHERE r.id=v.roti GROUP BY r.id", { type: db.sequelize.QueryTypes.SELECT})
         .then(data => {
             res.send(data);
         })

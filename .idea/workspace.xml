@@ -31,7 +31,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71369f89-4505-498d-a530-4778032f0166" name="Default Changelist" comment="" />
+    <list default="true" id="71369f89-4505-498d-a530-4778032f0166" name="Default Changelist" comment="Add vote capacity">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/roti.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/roti.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/votes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/votes.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,12 +94,22 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Node.js.api" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
@@ -104,7 +124,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593589134151</updated>
-      <workItem from="1593589135435" duration="24239000" />
+      <workItem from="1593589135435" duration="26331000" />
+      <workItem from="1594807390965" duration="672000" />
+      <workItem from="1594808838048" duration="23003000" />
     </task>
     <task id="LOCAL-00001" summary="Add vote capacity">
       <created>1593788818739</created>
@@ -120,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593788964129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add vote capacity">
+      <created>1593789179382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593789179382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,12 +207,17 @@
         <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add vote capacity" />
     <option name="LAST_COMMIT_MESSAGE" value="Add vote capacity" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="493" y="145" key="#Docker" timestamp="1594803465016">
+      <screen x="0" y="0" width="1440" height="875" />
+    </state>
+    <state x="493" y="145" key="#Docker/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1594803465016" />
     <state x="400" y="0" width="628" height="875" key="#Dockerfile" timestamp="1593589152380">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
@@ -204,26 +238,74 @@
       <screen x="0" y="0" width="1440" height="875" />
     </state>
     <state x="560" y="321" key="Github.ShareDialog/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593590208467" />
-    <state width="679" height="209" key="GridCell.Tab.0.bottom" timestamp="1593788974801">
+    <state width="1358" height="209" key="GridCell.Tab.0.bottom" timestamp="1595240651155">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
-    <state width="1358" height="209" key="GridCell.Tab.0.bottom/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1593689275778" />
-    <state width="679" height="209" key="GridCell.Tab.0.bottom/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593788974801" />
-    <state width="679" height="209" key="GridCell.Tab.0.center" timestamp="1593788974800">
+    <state width="1358" height="209" key="GridCell.Tab.0.bottom/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594972532353" />
+    <state width="1358" height="209" key="GridCell.Tab.0.bottom/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1595240651155" />
+    <state width="1358" height="209" key="GridCell.Tab.0.center" timestamp="1595240651148">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
-    <state width="1358" height="209" key="GridCell.Tab.0.center/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1593689275777" />
-    <state width="679" height="209" key="GridCell.Tab.0.center/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593788974800" />
-    <state width="679" height="209" key="GridCell.Tab.0.left" timestamp="1593788974800">
+    <state width="1358" height="209" key="GridCell.Tab.0.center/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594972532352" />
+    <state width="1358" height="209" key="GridCell.Tab.0.center/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1595240651148" />
+    <state width="1358" height="209" key="GridCell.Tab.0.left" timestamp="1595240651146">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
-    <state width="1358" height="209" key="GridCell.Tab.0.left/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1593689275776" />
-    <state width="679" height="209" key="GridCell.Tab.0.left/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593788974800" />
-    <state width="679" height="209" key="GridCell.Tab.0.right" timestamp="1593788974800">
+    <state width="1358" height="209" key="GridCell.Tab.0.left/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594972532352" />
+    <state width="1358" height="209" key="GridCell.Tab.0.left/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1595240651146" />
+    <state width="1358" height="209" key="GridCell.Tab.0.right" timestamp="1595240651150">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
-    <state width="1358" height="209" key="GridCell.Tab.0.right/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1593689275777" />
-    <state width="679" height="209" key="GridCell.Tab.0.right/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593788974800" />
+    <state width="1358" height="209" key="GridCell.Tab.0.right/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594972532352" />
+    <state width="1358" height="209" key="GridCell.Tab.0.right/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1595240651150" />
+    <state width="1358" height="260" key="GridCell.Tab.1.bottom" timestamp="1594918118919">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.1.bottom/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118919" />
+    <state width="1358" height="260" key="GridCell.Tab.1.center" timestamp="1594918118918">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.1.center/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118918" />
+    <state width="1358" height="260" key="GridCell.Tab.1.left" timestamp="1594918118917">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.1.left/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118917" />
+    <state width="1358" height="260" key="GridCell.Tab.1.right" timestamp="1594918118918">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.1.right/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118918" />
+    <state width="1358" height="260" key="GridCell.Tab.2.bottom" timestamp="1594918118922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.2.bottom/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118922" />
+    <state width="1358" height="260" key="GridCell.Tab.2.center" timestamp="1594918118920">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.2.center/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118920" />
+    <state width="1358" height="260" key="GridCell.Tab.2.left" timestamp="1594918118919">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.2.left/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118919" />
+    <state width="1358" height="260" key="GridCell.Tab.2.right" timestamp="1594918118921">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.2.right/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118921" />
+    <state width="1358" height="260" key="GridCell.Tab.3.bottom" timestamp="1594918118926">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.3.bottom/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118926" />
+    <state width="1358" height="260" key="GridCell.Tab.3.center" timestamp="1594918118924">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.3.center/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118924" />
+    <state width="1358" height="260" key="GridCell.Tab.3.left" timestamp="1594918118923">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.3.left/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118923" />
+    <state width="1358" height="260" key="GridCell.Tab.3.right" timestamp="1594918118925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1358" height="260" key="GridCell.Tab.3.right/-255.-1080.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1594918118925" />
     <state x="548" y="358" key="NewPhpFileDialog" timestamp="1593701107440">
       <screen x="0" y="0" width="1440" height="875" />
     </state>
@@ -248,5 +330,26 @@
       <screen x="0" y="0" width="1440" height="875" />
     </state>
     <state x="479" y="319" key="git4idea.ui.GitResetDialog/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1593589896981" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1595233113254">
+      <screen x="0" y="0" width="1440" height="875" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/-255.-1080.1920.1080/0.0.1440.875@0.0.1440.875" timestamp="1595233113254" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/votes.controller.js</url>
+          <line>77</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/api.routes.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

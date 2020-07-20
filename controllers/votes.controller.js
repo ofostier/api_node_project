@@ -1,6 +1,8 @@
 const db = require("../models");
 const Vote = db.votes;
 const Op = db.Sequelize.Op;
+const Fn = db.Sequelize.fn;
+const Col = db.Sequelize.col;
 
 console.log("Get Controller votes.");
 // Create and Save a new Tutorial
@@ -43,6 +45,49 @@ exports.findAll = (req, res) => {
     console.log("Route Votes FindAll.");
 
     Vote.findAll({ where: condition })
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while retrieving votes"         });
+        });
+};
+
+exports.findAndCountAll = (req, res) => {
+    const title = req.query.title;
+    var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
+
+    console.log("Route Votes FindAll COUNT.");
+
+    Vote.findAndCountAll({ where: condition })
+        .then(data => {
+            console.log(data.count);
+            console.log(data.rows);
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while retrieving votes"         });
+        });
+};
+
+// Retrieve all Vote from the database.
+exports.countVotes = (req, res) => {
+    const id = req.params.id;
+    //var condition = id ? { roti: { [Op.equal]: `%${id}%` } } : null;
+    var condition = id ? { roti: { [Op.eq]: `${id}` } } : null;
+
+    console.log("Route count Votes > " + id);
+
+
+    Vote.findAll(
+        {
+            attributes: ['roti', [Fn('COUNT', Col('roti')), 'nb_votes'], [Fn('sum', Col('rating')), 'total'],[Fn('AVG', Col('rating')), 'average']], where: condition
+        }
+        )
         .then(data => {
             res.send(data);
         })
